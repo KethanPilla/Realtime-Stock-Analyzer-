@@ -7,7 +7,7 @@ function App() {
   const [result, setResult] = useState("")
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="App-header">fit 
         <h1>Stock analysis</h1>
       </header>
       {
