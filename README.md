@@ -2,7 +2,7 @@
 
 A full-stack React application for analyzing stock investment opportunities based on financial metrics. This tool helps investors make informed decisions by calculating key financial ratios and providing buy/sell recommendations.
 
-![Stock Analyzer]([https://www.freepik.com/free-vector/hand-drawn-stock-market-concept_20058480.htm#fromView=keyword&page=1&position=1&uuid=59af1c80-e3a7-47ac-84ef-933d3a28b023&query=Stock+Analysis])
+![Stock Analyzer](https://github.com/user-attachments/assets/21d44eb5-8f0d-44fe-a931-13ebd43df52d)
 
 ## Features
 
