@@ -1,75 +1,129 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+# Stock Analyzer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack React application for analyzing stock investment opportunities based on financial metrics. This tool helps investors make informed decisions by calculating key financial ratios and providing buy/sell recommendations.
 
-## Available Scripts
+![Stock Analyzer](https://github.com/yourusername/stockAnalyzer/raw/main/screenshot.png)
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Comprehensive Financial Analysis**: Calculate essential stock valuation metrics including P/E ratio, P/B ratio, P/S ratio, and more
+- **Investment Recommendations**: Get clear buy/sell signals based on multiple financial indicators
+- **Easy-to-Use Interface**: Simple form input for financial data with clear results display
+- **Responsive Design**: Works seamlessly across desktop and mobile devices
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Key Metrics Calculated
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Price-to-Earnings (P/E) Ratio
+- Price-to-Book (P/B) Ratio
+- Price-to-Sales (P/S) Ratio
+- Dividend Yield
+- Earnings Growth
+- Debt-to-Equity Ratio
+- Return on Equity (ROE)
 
-### `npm test`
+## Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Frontend**: React, CSS
+- **API Integration**: Google Gemini AI API for financial analysis
+- **State Management**: React Hooks
+- **UI Components**: Custom components with responsive design
+- **Loading Indicators**: React Spinners
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
+   ```
+   git clone https://github.com/yourusername/stockAnalyzer.git
+   cd stockAnalyzer
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Install dependencies:
+   ```
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Create a `.env` file in the root directory with your Gemini API key:
+   ```
+   REACT_APP_GEMINI_API=your_api_key_here
+   ```
 
-### `npm run eject`
+4. Start the development server:
+   ```
+   npm start
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Enter the required financial metrics in the form fields:
+   - Market Price per share
+   - Book Value per share
+   - EBITDA
+   - EBIT
+   - EBIT Margin
+   - Earnings per Share
+   - Annual Dividend
+   - Dividend Yield
+   - PE ratio
+   - Previous EPS
+   - Current EPS
+   - Total Debt
+   - Total Equity
+   - Net Income
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Submit the form to get a detailed analysis with investment recommendations.
 
-## Learn More
+3. Use the "Clear Results" button to return to the form for another analysis.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## API Integration
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This application uses the Google Gemini AI API to analyze financial metrics and generate investment recommendations. You'll need to:
 
-### Code Splitting
+1. Obtain an API key from [Google AI Studio](https://ai.google.dev/)
+2. Add the key to your environment variables as described in the installation section
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Project Structure
 
-### Analyzing the Bundle Size
+```
+stockAnalyzer/
+├── public/             # Static files
+├── src/                # Source files
+│   ├── App.js          # Main application component
+│   ├── FinancialForm.js # Form component for financial metrics input
+│   ├── Result.js       # Results display component
+│   ├── App.css         # App-level styles
+│   ├── FinancialForm.css # Form-specific styles
+│   ├── Result.css      # Result-specific styles
+│   └── ...
+├── .env                # Environment variables (not committed to git)
+└── README.md           # Project documentation
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Future Enhancements
 
-### Making a Progressive Web App
+- Historical data integration with financial APIs
+- Chart visualizations for metrics and trends
+- Portfolio management features
+- Export functionality for analysis results
+- User accounts to save and compare analyses
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Contributing
 
-### Advanced Configuration
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-### Deployment
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-### `npm run build` fails to minify
+## Acknowledgements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# stockAnalyzer
-Building a fullstack stockAnalyzer using API
->>>>>>> 2c23627d11f1873ba51f1d9c190d06e5da3baa44
+- [Create React App](https://github.com/facebook/create-react-app)
+- [Google Gemini AI](https://ai.google.dev/)
+- [React Spinners](https://www.npmjs.com/package/react-spinners)
