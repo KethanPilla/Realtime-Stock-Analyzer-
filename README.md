@@ -1,4 +1,4 @@
-# Stock Analyzer
+# Real-time Stock Analyzer
 
 A full-stack React application for analyzing stock investment opportunities based on financial metrics. This tool helps investors make informed decisions by calculating key financial ratios and providing buy/sell recommendations.
 
